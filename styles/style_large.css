@@ -1,0 +1,106 @@
+/*______________________Reset______________________*/
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+:root {
+    --bk_color_1: white;
+    --bk_color_2: pink;
+    --bk_color_3: rgb(238, 77, 104);
+    --bk_color_4: rgb(190, 21, 49);
+    --bk_color_5: rgb(81, 11, 11);
+
+    --font_1: Balsamiq Sans;
+    --font_2: Caprasimo;
+    --font_3: DM Sans;
+    --font_4: "Open Sans";
+    --font_5: Roboto;
+    --font_6: Poppins;
+    --font_7: Oswald;
+
+    --general_color_1: black;
+    --general_color_2: white;
+    --general_color_3: aqua;
+    --general_color_4: yellow;
+    --general_color_5: rgb(190, 21, 49);
+    --general_color_6: rgb(81, 11, 11);
+}
+
+/*______________________BODY______________________*/
+body {
+    text-align: center;
+    animation-name: infinite;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    background-color: var(--general_color_6);
+}
+
+/*@keyframes infinite {
+    0%   {background-color: black;}
+    5%   {background-color: pink;}
+    25%  {background-color: rgb(238, 77, 104);}
+    50%  {background-color: rgb(190, 21, 49);}
+    100% {background-color: rgb(81, 11, 11)}
+}*/
+
+
+/*______________________HEADER______________________*/
+nav {
+    float: center; 
+    padding: 20px;
+}
+
+a {
+    color: var(--bk_color_1); 
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer; 
+    color: var(--general_color_3);
+}
+
+ul {list-style: none;}
+
+li {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-family: var(--font_4);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 76px;
+    top: 0;
+    left: 0;
+    border-bottom: 5px solid var(--general_color_4);
+}
+
+#hamb-button {display: none;}
+
+
+/*______________________MAIN______________________*/
+
+.introduction {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    height: 100vh; /*ocupa altura total da tela */
+    padding-top: 76px; /*para compensar o header fixo */
+}
+
+#my-name {
+    font-size: 7rem;
+    color: var(--general_color_2);
+    font-family: var(--font_7);
+}
+
+button > #contactMe_Btn {
+    width: 40%;
+    height: 30px;
+}
+
+
+
