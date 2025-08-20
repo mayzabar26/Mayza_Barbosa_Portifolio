@@ -1,3 +1,6 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
 /*______________________Reset______________________*/
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
@@ -7,6 +10,7 @@
     --bk_color_3: rgb(238, 77, 104);
     --bk_color_4: rgb(190, 21, 49);
     --bk_color_5: rgb(81, 11, 11);
+    --bk_color_6: black;
 
     --font_1: Balsamiq Sans;
     --font_2: Caprasimo;
@@ -22,6 +26,8 @@
     --general_color_4: yellow;
     --general_color_5: rgb(190, 21, 49);
     --general_color_6: rgb(81, 11, 11);
+    --general_color_7: #82C7FF;
+    --general_color_8: #223382;
 }
 
 /*______________________BODY______________________*/
@@ -30,7 +36,7 @@ body {
     animation-name: infinite;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    background-color: var(--general_color_6);
+    background-color: var(--general_color_8);
 }
 
 /*@keyframes infinite {
@@ -43,20 +49,11 @@ body {
 
 
 /*______________________HEADER______________________*/
-nav {
-    float: center; 
-    padding: 20px;
-}
+nav {float: right; padding: 10px;}
 
-a {
-    color: var(--bk_color_1); 
-    text-decoration: none;
-}
+a {color: var(--general_color_8); text-decoration: none; font-weight: 500;}
 
-a:hover {
-    cursor: pointer; 
-    color: var(--general_color_3);
-}
+a:hover {cursor: pointer; color: var(--general_color_7);}
 
 ul {list-style: none;}
 
@@ -70,12 +67,12 @@ li {
 }
 
 header {
+    background: var(--bk_color_1);
     position: fixed;
     width: 100%;
     height: 76px;
     top: 0;
     left: 0;
-    border-bottom: 5px solid var(--general_color_4);
 }
 
 #hamb-button {display: none;}
@@ -87,20 +84,60 @@ header {
     display: inline-block;
     justify-content: center;
     align-content: center;
-    height: 100vh; /*ocupa altura total da tela */
-    padding-top: 76px; /*para compensar o header fixo */
+    height: 85vh; /*ocupa altura total da tela */
 }
 
 #my-name {
     font-size: 7rem;
-    color: var(--general_color_2);
+    color: var(--general_color_7);
     font-family: var(--font_7);
 }
 
-button > #contactMe_Btn {
-    width: 40%;
-    height: 30px;
+/*______________________FOOTER______________________*/
+.social-container {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 0;
 }
 
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: auto;
+}
 
+.social-icons li {
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    font-size: 1.4em;
+}
+
+.social-icons a {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--general_color_7);
+    transition: transform 0.3s ease;
+}
+
+.social-icons a i {
+    color: var(--general_color_8);
+    font-size: 24px;
+    line-height: 60px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    background: var(--bk_color_1);
+}
+
+.social-icons a:hover i {
+    color: var(--general_color_8);
+    transform: scale(1.2);
+}
 
