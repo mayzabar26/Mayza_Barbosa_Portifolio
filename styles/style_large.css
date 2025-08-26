@@ -22,12 +22,12 @@
 
     --general_color_1: black;
     --general_color_2: white;
-    --general_color_3: aqua;
-    --general_color_4: yellow;
-    --general_color_5: rgb(190, 21, 49);
-    --general_color_6: rgb(81, 11, 11);
+    --general_color_3: rgb(190, 21, 49);
+    --general_color_4: rgb(81, 11, 11);
     --general_color_7: #82C7FF;
     --general_color_8: #223382;
+    --general_color_9: #2b4c5d;
+    --general_color_10: #0f1a20;
 }
 
 /*______________________BODY______________________*/
@@ -36,7 +36,7 @@ body {
     animation-name: infinite;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    background-color: var(--general_color_8);
+    background-color: var(--general_color_9);
 }
 
 /*@keyframes infinite {
@@ -51,9 +51,9 @@ body {
 /*______________________HEADER______________________*/
 nav {float: right; padding: 10px;}
 
-a {color: var(--general_color_2); text-decoration: none; font-weight: 500;}
+a {color: var(--general_color_10); text-decoration: none; font-weight: 700;}
 
-a:hover {cursor: pointer; color: var(--general_color_7);}
+a:hover {cursor: pointer; color: var(--general_color_2);}
 
 ul {list-style: none;}
 
@@ -88,7 +88,7 @@ header {
 
 #my-name {
     font-size: 7rem;
-    color: var(--general_color_7);
+    color: var(--general_color_10);
     font-family: var(--font_7);
 }
 
@@ -111,10 +111,10 @@ header {
 
 /*______________________FOOTER______________________*/
 footer {
-    background-color: var(--bk_color_1);
+    background-color: var(--general_color_10);
     padding: 0;
     margin: auto;
-    height: 15vh;
+    height: 103px;
 }
 .social-container {
     width: 100%;
@@ -142,12 +142,12 @@ footer {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: var(--general_color_7);
+    background: var(--general_color_2);
     transition: transform 0.3s ease;
 }
 
 .social-icons a i {
-    color: var(--general_color_8);
+    color: var(--general_color_10);
     font-size: 24px;
     line-height: 60px;
     transition: all 0.3s ease;
@@ -155,11 +155,11 @@ footer {
 
 .social-icons a:hover {
     transform: scale(1.1);
-    background: var(--bk_color_1);
+    background: var(--general_color_9);
 }
 
 .social-icons a:hover i {
-    color: var(--general_color_8);
+    color: var(--general_color_2);
     transform: scale(1.2);
 }
 
