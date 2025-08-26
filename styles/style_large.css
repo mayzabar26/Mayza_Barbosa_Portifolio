@@ -49,11 +49,19 @@ body {
 
 
 /*______________________HEADER______________________*/
-nav {float: right; padding: 10px;}
+nav {float: right; 
+    padding: 10px; 
+    background-color: var(--general_color_10);
+    margin: auto;
+    height: 65px;
+    width: 40%;
+    border-top-left-radius: 80px 80px;
+    border-bottom-left-radius: 80px 80px;
+}
 
-a {color: var(--general_color_10); text-decoration: none; font-weight: 700;}
+a {color: var(--general_color_2); text-decoration: none; font-weight: 700;}
 
-a:hover {cursor: pointer; color: var(--general_color_2);}
+a:hover {cursor: pointer; color: var(--general_color_9);}
 
 ul {list-style: none;}
 
